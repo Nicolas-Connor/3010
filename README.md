@@ -72,7 +72,8 @@ A namespace is a collection of rules for constructing names.
 		
 			* We'll provide uniqueness w/ local control
 			* DNS (domain name system) - U of M has local control over all name ending in umanitoba.ca - they can subdivide their domain such as cs.umanitoba.ca to divide local control to an even smaller subgroup
-3. Ability to access names from every possible location w./ good performance.  We need to find the ip of google.com fast anywhere from the world
+3. Ability to access names from every possible location with good performance    
+> We need to find the ip of google.com fast anywhere from the world
 
 	* DNS lookups are done hierarchically
 		* Each leavel of a domain has a server for lookups.  
