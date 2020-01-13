@@ -97,4 +97,32 @@ A namespace is a collection of rules for constructing names.
 ### 3 architecture design consideration for the clien/server model
 1. State management - stateful vs stateless    
 *(state means to have memory)*
-	a) ajsia
+* State enable complex functionality by maintaining info about its client
+	* ex.// keeping track of what is added to a cart
+* Problem: what happens when there is an error
+	* We need to implement a recovery system so the user can re-start its operation after failure
+* Stateless server dosen't maintain any client info and therefore much simpler in design
+	* if there is a failure, no data loss theefore nothing bad happens
+* Working problem: how to chose the design of a distributed file system
+	* requirement: must ensure non-concurrent file access
+		* we need state for this: lock for each client
+			* but if error occurs we have invalid lock info (stateless would prevent these annoying errors)
+		* in reality we use a hybrid approach - half stateless half stateful
+			* introduce some recovery that leads to soe stateless behaviour
+2. Concurrency
+	* Using a multi-threaded server just make sense
+		* this concept is explored in 3430
+3. farming (server farms)
+* When a server gets overloaded we can't just get a bgger server
+* instead use a bunch of smaller, cheaper machines
+	* can be locally or remotly distributed
+* gives us *both* improved performance and better availability
+	* if 1 server goes down, we still have N-1
+	
+* 2 design issues with farming
+	1. each server must contain a copy of what we re serving
+		* Replication issue
+		* when data changes, we must chage all copies
+			* This is a concsistency problem
+		* must allow for scalibility
+			* as # of servers grows, replication cost must stay "the-same" (we can't be inificient and use all our processing power to communicate and share data between server for replication)
