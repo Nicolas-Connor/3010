@@ -69,9 +69,11 @@ A namespace is a collection of rules for constructing names.
 			* Problem : performance, bottlenecks, all traffic goes to the one system. 
 			* Problem : scalibility, hard to scale one system because sometimes system are tested with a smaler audiance then expected
 		2. a hierarchical name system
+		
 			* We'll provide uniqueness w/ local control
 			* DNS (domain name system) - U of M has local control over all name ending in umanitoba.ca - they can subdivide their domain such as cs.umanitoba.ca to divide local control to an even smaller subgroup
 3. Ability to access names from every possible location w./ good performance.  We need to find the ip of google.com fast anywhere from the world
+
 			* DNS lookups are done hierarchically
 				* Each leavel of a domain has a server for lookups.  
 					* These servers will refer to other servers to resolve name 
