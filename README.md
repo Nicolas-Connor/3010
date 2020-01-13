@@ -47,7 +47,7 @@ A namespace is a collection of rules for constructing names.
 - social insurance # (xxx-xxx-xxx)
 - IP address (xxx.xxx.xxx.xx)
 - domain name (www.xxx.xx)
-- URL's (<protocol>://user:pw@<hostname>:port/<URI> (Uniform Resource Identifier is a Unix path to a resource))
+- URL's (protocol://user:pw@hostname:port/URI (Uniform Resource Identifier is a Unix path to a resource))
   
  ### Requirements for resource location
  1. location tranparency - We need to able to see the location of the resource (server)
