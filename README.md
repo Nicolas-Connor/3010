@@ -92,3 +92,9 @@ A namespace is a collection of rules for constructing names.
 	* we can't use ports 0-1023 unless we have root level access
 		* http is on port 80
 		* ssh is on port 22
+# Day 4
+
+### 3 architecture design consideration for the clien/server model
+1. State management - stateful vs stateless    
+*(state means to have memory)*
+	a) ajsia
