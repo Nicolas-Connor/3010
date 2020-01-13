@@ -14,4 +14,14 @@
 
 # Day 0
 
+### What is a distributed system
+A distributed system is a **program** that consists of multiple parts **running on more than 1 computer** interconnected via a network
+
+### There are 2 main models of distributed computed
+1. client-server model
+  * In this model we have **servers** that deliver some service to **client** computers
+2. peer-to-peer systems
+  * System are both servers and clients and will perform both rolls at the same time
+
+
 # Day 1
