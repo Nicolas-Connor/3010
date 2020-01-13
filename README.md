@@ -83,8 +83,7 @@ A namespace is a collection of rules for constructing names.
 					* Have main servers, replica server (copies), and caching server
 						* Store recently used mappings
 				* *note* this gets us from a name to an IP address. **We need** to bale to go from the IP address to a computer. 
-				* IP gets us to the LAN, we need to use a MAC address of the ethernet card to ID computer  
-				
+				* IP gets us to the LAN, we need to use a MAC address of the ethernet card to ID computer 
 4. Protocol identification need to get to the software
 	* Done with protocol ports
 	* Software  listens on the port by asking th OS to **bind** it to the port 
