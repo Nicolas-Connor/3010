@@ -74,15 +74,15 @@ A namespace is a collection of rules for constructing names.
 			* DNS (domain name system) - U of M has local control over all name ending in umanitoba.ca - they can subdivide their domain such as cs.umanitoba.ca to divide local control to an even smaller subgroup
 3. Ability to access names from every possible location w./ good performance.  We need to find the ip of google.com fast anywhere from the world
 
-			* DNS lookups are done hierarchically
-				* Each leavel of a domain has a server for lookups.  
-					* These servers will refer to other servers to resolve name 
-					* Start with root name server (.com, .ca, ...) that point to server for a specific top level
-					* e.g cs.umanitoba.ca will first go to the ca server then refer to umanitoba.ca server which will then refer to the cs.umanitoba.ca server
+		* DNS lookups are done hierarchically
+			* Each leavel of a domain has a server for lookups.  
+				* These servers will refer to other servers to resolve name 
+				* Start with root name server (.com, .ca, ...) that point to server for a specific top level
+				* e.g cs.umanitoba.ca will first go to the ca server then refer to umanitoba.ca server which will then refer to the cs.umanitoba.ca server
 				* We optimize lookup when info is found
 					* Have main servers, replica server (copies), and caching server
 						* Store recently used mappings
-				* *note* this gets us from a name to an IP address. **We need** to bale to go from the IP address to a computer. 
+				* *note* this gets us from a name to an IP address. **We need** to ba able to go from the IP address to a computer. 
 				* IP gets us to the LAN, we need to use a MAC address of the ethernet card to ID computer 
 4. Protocol identification need to get to the software
 	* Done with protocol ports
