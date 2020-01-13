@@ -83,7 +83,7 @@ A namespace is a collection of rules for constructing names.
 	* *note* DNS gets us from a name to an IP address. **We need** to ba able to go from the IP address to a computer. 
 	* IP gets us to the LAN, we need to use a MAC address of the ethernet card to ID computer 
 4. Protocol identification need to get to the software    
-Once we have the IP from DNS we need to get to the software on the server    
+*Once we have the IP from DNS we need to get to the software on the server*    
 	* Done with protocol ports
 	* Software  listens on the port by asking th OS to **bind** it to the port 
 	* There are well known ports (0-1023) & general use ports (1024-65535)
