@@ -25,3 +25,19 @@ A distributed system is a **program** that consists of multiple parts **running 
 
 
 # Day 1
+
+### How to solve resource location (4 solutions)
+Getting the exact location of a server to access a service can be a tricky business.  Say you want to go to google, google has many servers and are constantly changing, we need a way to easily locate it .
+
+1. Hard-code machine address
+* lacks flexiblity. Tedius/not practicle to change when server changes
+2. Configuration files containing machine addresses
+* Not pratical for large and external project.  Server operators must send its address in a config file every time a new server is added
+3. Send a broadcast message with addresses
+* Every system hearing the message has the message
+4. Use a lookup service
+* Assign a global, uniqueand human understandable name to each resource
+* Usign a Domain Name Service (DNS), get the location of the server from the name
+
+# Day 2
+
