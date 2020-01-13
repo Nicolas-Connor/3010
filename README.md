@@ -75,14 +75,14 @@ A namespace is a collection of rules for constructing names.
 3. Ability to access names from every possible location with good performance    
 > We need to find the ip of google.com fast anywhere from the world
 
-	* DNS lookups are done hierarchically
-		* Each leavel of a domain has a server for lookups.  
-			* These servers will refer to other servers to resolve name 
-		* Start with root name server (.com, .ca, ...) that point to server for a specific top level
-				* e.g cs.umanitoba.ca will first go to the ca server then refer to umanitoba.ca server which will then refer to the cs.umanitoba.ca server
-	* DNS servers have main servers, replica server (copies), and caching server
-	* *note* DNS gets us from a name to an IP address. **We need** to ba able to go from the IP address to a computer. 
-	* IP gets us to the LAN, we need to use a MAC address of the ethernet card to ID computer 
+* DNS lookups are done hierarchically
+	* Each leavel of a domain has a server for lookups.  
+		* These servers will refer to other servers to resolve name 
+	* Start with root name server (.com, .ca, ...) that point to server for a specific top level
+			* e.g cs.umanitoba.ca will first go to the ca server then refer to umanitoba.ca server which will then refer to the cs.umanitoba.ca server
+* DNS servers have main servers, replica server (copies), and caching server
+* *note* DNS gets us from a name to an IP address. **We need** to ba able to go from the IP address to a computer. 
+* IP gets us to the LAN, we need to use a MAC address of the ethernet card to ID computer 
 4. Protocol identification need to get to the software    
 *Once we have the IP from DNS we need to get to the software on the server*    
 	* Done with protocol ports
