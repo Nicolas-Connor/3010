@@ -40,16 +40,9 @@ Getting the exact location of a server to access a service can be a tricky busin
 * Usign a Domain Name Service (DNS), get the location of the server from the name
 
 # Day 2
-#### What is a namespace?
-A namespace is a collection of rules for constructing names.
 
-*Some examples*
-- social insurance # (xxx-xxx-xxx)
-- IP address (xxx.xxx.xxx.xx)
-- domain name (www.xxx.xx)
-- URL's (protocol://user:pw@hostname:port/URI (Uniform Resource Identifier is a Unix path to a resource))
   
- ### Requirements for resource location
+ #### Requirements for resource location
  1. location tranparency - We need to able to see the location of the resource (server)
 	* The name of the resource dosen't indicate our resource location
 		* That way we can makes the resources movable, we can reorganise the software on the fly witout changing a whole wack of settings on each connecting machine
@@ -92,6 +85,15 @@ A namespace is a collection of rules for constructing names.
 	* we can't use ports 0-1023 unless we have root level access
 		* http is on port 80
 		* ssh is on port 22
+		
+#### What is a namespace?
+A namespace is a collection of rules for constructing names.
+
+*Some examples*
+- social insurance # (xxx-xxx-xxx)
+- IP address (xxx.xxx.xxx.xx)
+- domain name (www.xxx.xx)
+- URL's (protocol://user:pw@hostname:port/URI (Uniform Resource Identifier is a Unix path to a resource))
 # Day 4
 
 ### 3 architecture design consideration for the clien/server model
@@ -248,7 +250,7 @@ def funcName(arg1,arg2,arg3):
 		- execute line-by-line
 			- skip defs until called
 # Lecure 7 (Monday) 
-## HTTP (hyper text transfer protocol)
+### HTTP (hyper text transfer protocol)
 * Basic functionality
 	* an http client opens a connecion and sends a request to an http server
 	* the server returns a response
