@@ -1,18 +1,5 @@
-# Comp 3010 notes
 
-## How to upload your edits to this page
-1. Fork this project
-2. In your own Fork, make your edits in README.md
-3. Create a pull request
-> Note: no copyrightable material will be accepted into this repo (no in-class pictures of powerpoint slides), futhermore, no discussion of assignments or gradeable material will be accepted into this document regardless if it was discussed in class or not
 
-## How to upload your own document without making edits to this page
-1. Fork this project
-2. Add your own notes in a seperate document anywhere on this page
-3. Create a pull request
-> Note: no copyrightable material will be accepted into this repo (no in-class pictures of powerpoint slides), futhermore, no discussion of assignments or gradeable material will be accepted into this project regardless if it was discussed in class or not
-
-# Day 0
 
 ### What is a distributed system
 A distributed system is a **program** that consists of multiple parts **running on more than 1 computer** interconnected via a network
@@ -24,7 +11,7 @@ A distributed system is a **program** that consists of multiple parts **running 
    * System are both servers and clients and will perform both rolls at the same time
 
 
-# Day 1
+
 
 ### How to solve resource location (4 solutions)
 Getting the exact location of a server to access a service can be a tricky business.  Say you want to go to google, google has many servers and are constantly changing, we need a way to easily locate it .
@@ -39,7 +26,7 @@ Getting the exact location of a server to access a service can be a tricky busin
 * Assign a global, uniqueand human understandable name to each resource
 * Usign a Domain Name Service (DNS), get the location of the server from the name
 
-# Day 2
+
 
   
  #### Requirements for resource location
@@ -94,7 +81,7 @@ A namespace is a collection of rules for constructing names.
 - IP address (xxx.xxx.xxx.xx)
 - domain name (www.xxx.xx)
 - URL's (protocol://user:pw@hostname:port/URI (Uniform Resource Identifier is a Unix path to a resource))
-# Day 4
+
 
 ### 3 architecture design consideration for the clien/server model
 1. State management - stateful vs stateless    
@@ -143,7 +130,7 @@ A namespace is a collection of rules for constructing names.
 				 * This is after firewall
 				 * Our own server will redirect work load internally
 				 
-# Lecture 5
+
 ### Division of Labour
 > How does the client adapt to server design?
 
@@ -174,7 +161,7 @@ A namespace is a collection of rules for constructing names.
 	
 
 			
-# Lecture 6 (Friday)
+
 ### Python
 * Scripting language - weakly typed (not bound to a specific programming language)
 * easy I/O
@@ -249,7 +236,7 @@ def funcName(arg1,arg2,arg3):
 - there's no main method
 		- execute line-by-line
 			- skip defs until called
-# Lecure 7 (Monday) 
+
 ### HTTP (hyper text transfer protocol)
 * Basic functionality
 	* an http client opens a connecion and sends a request to an http server
@@ -303,7 +290,7 @@ Header lines:
 	* Last-modified - resource modification date
 		* Used for client caching (if version changes, then browser will re-fetch resource0
 		* Use HEAD to get just the header lines   
-# Lecture 8 (Wenesday)
+
 ### HTTP Messages
 * initial line
 * headers
@@ -352,7 +339,7 @@ name=fred&fav+colour=green%26yellow # & is to sperate name=value pairs, + (or %2
 			* We don't want to run arbitary code hence why we limmitit what suffix our server recognises
 		* We can control where the files must reside
 			* **Our homework files must reside in `/{umID}/public.html/cgi-bin/`** or `/~{umID}/cgi-bin/`
-# Lecture 9 (Friday)
+
 *{missed start of class}*
 with a post, msg body is piped to us
 
@@ -412,7 +399,7 @@ if envirom.haskey('QUERY_STRING')
 * no constraints on what's in a cookie, 
 	* good: we can store what we need
 	* bad: clients can have sensitive info passed without knowledge
-# Lecture 10 (Monday)
+
 ### Cookie functionality
 * use http headers to pass cookies containing name/value pairs
 	* one header line each
@@ -469,7 +456,7 @@ if envirom.haskey('QUERY_STRING')
 		* use dynamic code to generate the resources
 			* when data **changes**
 			
-# Lecture 11 (Wednesday)
+
 ### Web, the REST (Representational state transfer)
 * Attempt to capture a good design pattern
 	* focus on the i/f, not the implication
@@ -508,7 +495,7 @@ if envirom.haskey('QUERY_STRING')
 	* what's the alternative? text
 		* use markup to add meta-info to describe contents
 
-# Lecture 12 (Friday)
+
 ### JSON (Javascript Object Notation)
 * a text based encoding of key-value pairs
 	* programmatic data structures for fast & easy generation & parsing
@@ -552,7 +539,7 @@ if envirom.haskey('QUERY_STRING')
 		* basic detector: blocking
 			* requires a timeout
 				* expires -> error handling
-# Lecture 13 (Monday)
+
 
 
 ### sockets
