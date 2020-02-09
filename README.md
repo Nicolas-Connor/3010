@@ -19,13 +19,6 @@
 		- [requests:](#requests)
 		- [CGI (common gateway interface):](#cgi-common-gateway-interface)
 		- [session data](#session-data)
-	- [Web performance](#web-performance)
-	- [Web, the REST (Representational state transfer)](#web-the-rest-representational-state-transfer)
-	- [Communication Basics](#communication-basics)
-	- [JSON (Javascript Object Notation)](#json-javascript-object-notation)
-	- [Inter-process Communication IPC](#inter-process-communication-ipc)
-	- [sockets](#sockets)
-	- [Socket programming:](#socket-programming)
 
 
 ### What is a distributed system
