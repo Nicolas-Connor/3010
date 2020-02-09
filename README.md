@@ -190,55 +190,7 @@ A namespace is a collection of rules for constructing names.
 * Hash tables are built-in python (fundamental type)
 	* Key-value coding
 
-Every python script will start with the following
-``` python
-#!/usr/bin/python
-import sys
 
-# read a file
-myFile = open("empdata.txt","r")
-# or
-myFile = sys.stdin
-```
-with any file you can :
-a) `input=f.readlines()`[reads whole file]
-b)`line=f.readline()` [1 line]
-c) `for line in f:` [reads a line from f and puts it in the line variable] iterates until EOF
-can do:
-``` python
-with open("x.txt","r") as f:
-	for line in f:
-# auto close at the end of with block 
-# (after indetation)
-```
-``` python
-# assume we have a line read in 
-totalEmps = totalEmps + 1
-# There's no ++ operator in python
-
-name,age,dept, salary = line.split(":") #split default to whitespace, no need to declare (":")
-
-if age >55:
-	over55 = over55 +1
-	if salary > 40000:
-		termList[name]=salary
-			# a dictionary (hash table)
-```
-
-``` python
-# initialise a dictionary:
-termlist = {}
-termlist = {'key1':444,'key2':222}
-# index by key: 
-termList['key1'] -> 444
-
-# outdent to end of file processing
-if totalEmps > 0 and over55 > 0:
-	print "sorted list of fired emps:"
-	print "\nName\t\tSalary"
-	for next in sorted(termList.key()):
-		print "\n{0}\t\t{1}".format(next, termlist[next])
-```
 std list ops:
 - modifying in-place:
 		-	`list.sort()`
@@ -248,11 +200,6 @@ std list ops:
 		- `list.remove(val)`, 	`list.index(val)`,`list.count(val)`
 - stacks
 		- `list.append(val)`, `list.push(val)`, `list.pop()`
-- subroutines:
-``` python
-def funcName(arg1,arg2,arg3):
-	return a # a value or list
-``` 
 - there's no main method
 		- execute line-by-line
 			- skip defs until called
